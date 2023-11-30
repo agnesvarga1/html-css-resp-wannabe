@@ -135,13 +135,19 @@ img {
 }
 /*mobile*/
 @media screen and (max-width: 480px) {
+  .container {
+    padding-inline: 3rem;
+  }
   .row {
     flex-direction: column;
+    gap: 2rem;
+  }
+  .lessons {
+    padding-bottom: 2rem;
   }
 
   .lessons .col {
     width: 100%;
-    padding-block: 1rem;
   }
 
   .steps {
@@ -153,11 +159,12 @@ img {
   }
   .why-us {
     margin: 0;
-    padding: 3rem;
+    padding: 2rem 0;
     background-color: #222222;
   }
   .why-us .col-left,
   .why-us .col-right {
     width: 100%;
+    padding-block: 20px;
   }
 }
