@@ -47,7 +47,7 @@ img {
 
 /* LAYOUT */
 .container {
-  width: 100vw;
+  width: 100%;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -131,5 +131,33 @@ img {
 @media screen and (max-width: 780px) {
   .container {
     padding: 0 5px;
+  }
+}
+/*mobile*/
+@media screen and (max-width: 480px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .lessons .col {
+    width: 100%;
+    padding-block: 1rem;
+  }
+
+  .steps {
+    margin: 0;
+  }
+
+  .steps .col {
+    width: 100%;
+  }
+  .why-us {
+    margin: 0;
+    padding: 3rem;
+    background-color: #222222;
+  }
+  .why-us .col-left,
+  .why-us .col-right {
+    width: 100%;
   }
 }
